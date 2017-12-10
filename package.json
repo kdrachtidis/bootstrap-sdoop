@@ -25,6 +25,6 @@
     "bootstrap": "^4.0.0-beta.2",
     "holderjs": "^2.9.4",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.7"
+    "popper.js": "^1.13.0"
   }
 }
