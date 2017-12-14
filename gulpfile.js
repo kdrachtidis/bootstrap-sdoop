@@ -23,4 +23,15 @@ gulp.task('resizeMind', function() {
         .pipe(gulp.dest('dist/out-of-the-mind'));
 });
 
-gulp.task('default', [ 'resizeBlog', 'resizeMind' ]);
+gulp.task('resizeMind-vert', function() {
+    return gulp.src('assets/DH6eQH4XkAAIp0W.jpg')
+        .pipe(imageResize({
+            width: 500,
+            crop: false,
+            upscale: false,
+            quality: 1
+        }))
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', [ 'resizeBlog', 'resizeMind', 'resizeMind-vert' ]);

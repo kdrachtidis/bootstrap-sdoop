@@ -12,11 +12,17 @@
 }
 
 .jumbotron {
-    background-image: url("../assets/saulo-mohana-152320.jpg");
+    background-image: url("../assets/banner/saulo-mohana-152320.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -600px;
     background-size: 2000px;
+    background-color: rgba(252, 121, 0, 1);
+}
+
+.jumbotron.symposium {
+    background-image: url("../assets/banner/symposium.jpg");
+    background-position-y: 0;
 }
 
 .bg-light {
@@ -36,4 +42,8 @@
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.2;
+}
+
+.jumbotron.symposium h1, .jumbotron.symposium h2 {
+   color: #fff; 
 }
